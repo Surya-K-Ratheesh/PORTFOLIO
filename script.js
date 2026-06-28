@@ -25,12 +25,14 @@ const skillCopy = {
     text: "Responsive Next.js interfaces, dark mode systems, accessible contrast, dynamic components, and serverless contact flows.",
   },
   data: {
-    title: "Data Products",
-    text: "Spreadsheet ingestion, real-time tracking, MySQL foundations, cached client data, and lightweight analytics workflows.",
+    title: "Data Science",
+    text: "Recommendation systems, social graph scoring, unstructured text parsing, JSON pipelines, profile analytics, and Jupyter-based exploration.",
   },
 };
 
 const searchIndex = [
+  ["Social Network Recommendation Engine", "Python, Jupyter, JSON, graph recommendations, mutual connections", "#work"],
+  ["Instagram Profile Parser", "Python, Jupyter, JSON, Instagram analytics, 107 profiles", "#work"],
   ["Kidney Tumor Detection", "92% accuracy, Grad-CAM, DICOM CT scans", "#work"],
   ["Finance Manager", "Next.js, TypeScript, React Query, debt tracking", "#work"],
   ["Career Guidance Chatbot", "Python, Streamlit, Pandas, NLP", "#work"],

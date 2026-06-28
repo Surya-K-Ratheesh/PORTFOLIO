@@ -43,7 +43,7 @@
     <main>
       <section class="hero" id="home">
         <div class="hero-copy">
-          <p class="eyebrow">AI/ML Engineer · Full-stack Developer</p>
+          <p class="eyebrow">AI/ML Engineer &middot; Data Science &middot; Full-stack Developer</p>
           <h1>Surya K Ratheesh</h1>
           <p class="hero-text">
             B.Tech graduate in Artificial Intelligence and Machine Learning building production-ready ML systems,
@@ -62,17 +62,9 @@
         </div>
 
         <div class="hero-panel" aria-label="Portfolio highlights">
-          <div class="signal-card hero-stat">
-            <span>Classification Accuracy</span>
-            <strong data-count="92">0%</strong>
-          </div>
-          <div class="signal-card hero-stat">
+          <div class="signal-card hero-stat solo">
             <span>Shipped Projects</span>
-            <strong data-count="6">0</strong>
-          </div>
-          <div class="signal-card hero-stat">
-            <span>Report Time Reduced</span>
-            <strong data-count="70">0%</strong>
+            <strong data-count="9">0</strong>
           </div>
           <div class="orbit" aria-hidden="true">
             <span></span><span></span><span></span>
@@ -99,9 +91,60 @@
           </div>
           <div class="filter-tabs" aria-label="Project filters">
             <button class="filter active" type="button" data-filter="all">All</button>
+            <button class="filter" type="button" data-filter="data">Data Science</button>
             <button class="filter" type="button" data-filter="ml">ML</button>
             <button class="filter" type="button" data-filter="web">Web</button>
           </div>
+        </div>
+
+        <div class="featured-projects" aria-label="Featured data science projects">
+          <article class="project-card featured-card" data-type="data">
+            <div class="project-media social">
+              <span>SRE</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Featured Data Science &middot; Python &middot; Jupyter &middot; JSON</p>
+              <h3>Social Network Recommendation Engine</h3>
+              <p>
+                Built friend and page recommendation systems from social graph data using mutual-connection scoring,
+                shared-interest overlap, cleaning pipelines, and ranked candidate generation.
+              </p>
+              <div class="project-result">
+                <span>Updated June 2026</span>
+                <strong>Graph-based recommendations</strong>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Surya-K-Ratheesh/Social_Recommendation_Engine" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3 19c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.7-1.3-2.2-.2-4.5-1.1-4.5-4.9 0-1.1.4-2 1.1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.5 9.5 0 0 1 5 0c1.9-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7.7.7 1.1 1.6 1.1 2.7 0 3.8-2.3 4.7-4.5 4.9.4.3.8 1 .8 2v2.6c0 .3.2.6.8.5A10 10 0 0 0 12 2Z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured-card" data-type="data">
+            <div class="project-media instagram">
+              <span>IG</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Featured Data Science &middot; Python &middot; Jupyter &middot; JSON</p>
+              <h3>Instagram Profile Parser</h3>
+              <p>
+                Parsed messy Instagram profile dumps into structured JSON and analyzed 107 Bangalore ecosystem accounts
+                across posts, followers, following counts, and 34 unique account categories.
+              </p>
+              <div class="project-result">
+                <span>Updated June 2026</span>
+                <strong>107 profiles analyzed</strong>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Surya-K-Ratheesh/Instagram_Profile_Parser" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3 19c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.7-1.3-2.2-.2-4.5-1.1-4.5-4.9 0-1.1.4-2 1.1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.5 9.5 0 0 1 5 0c1.9-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7.7.7 1.1 1.6 1.1 2.7 0 3.8-2.3 4.7-4.5 4.9.4.3.8 1 .8 2v2.6c0 .3.2.6.8.5A10 10 0 0 0 12 2Z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
 
         <div class="project-grid">
@@ -110,7 +153,7 @@
               <span>CT</span>
             </div>
             <div class="project-content">
-              <p class="project-meta">Python · Streamlit · Keras · Grad-CAM</p>
+              <p class="project-meta">Python &middot; Streamlit &middot; Keras &middot; Grad-CAM</p>
               <h3>Kidney Tumor Detection Web App</h3>
               <p>
                 ResNet50 ensemble for DICOM CT scans with CLAHE preprocessing, 92% accuracy across three tumor classes,
@@ -128,7 +171,7 @@
               <span>FM</span>
             </div>
             <div class="project-content">
-              <p class="project-meta">Next.js 14 · TypeScript · React Query · Tailwind</p>
+              <p class="project-meta">Next.js 14 &middot; TypeScript &middot; React Query &middot; Tailwind</p>
               <h3>Finance Manager</h3>
               <p>
                 Debt tracking and spreadsheet ingestion tool with React Query caching, WCAG AA contrast, dark mode, and
@@ -146,7 +189,7 @@
               <span>AI</span>
             </div>
             <div class="project-content">
-              <p class="project-meta">Python · Streamlit · Pandas</p>
+              <p class="project-meta">Python &middot; Streamlit &middot; Pandas</p>
               <h3>Career Guidance Chatbot</h3>
               <p>
                 NLP-assisted counselling workflow that maps student profiles against 100+ career paths and reduces
@@ -164,7 +207,7 @@
               <span>H2W</span>
             </div>
             <div class="project-content">
-              <p class="project-meta">TypeScript · Next.js · CSS</p>
+              <p class="project-meta">TypeScript &middot; Next.js &middot; CSS</p>
               <h3>Home-2 Work</h3>
               <p>
                 Responsive coach hiring platform with multi-page flows, dark mode, dynamic components, and serverless
