@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive portfolio of Surya K Ratheesh, AI/ML engineer and full-stack developer."
+    />
+    <title>Surya K Ratheesh | AI/ML Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Surya K Ratheesh home">
+        <span>SKR</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="searchToggle" type="button" aria-label="Search sections" title="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.2-4.2m2.2-5.3a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+        </button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme" title="Theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.4-6.4-1.4 1.4M7 17l-1.4 1.4m0-12.8L7 7m10 10 1.4 1.4"/><circle cx="12" cy="12" r="4"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">AI/ML Engineer · Full-stack Developer</p>
+          <h1>Surya K Ratheesh</h1>
+          <p class="hero-text">
+            B.Tech graduate in Artificial Intelligence and Machine Learning building production-ready ML systems,
+            clinical AI interfaces, and fast full-stack tools.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              View Projects
+            </a>
+            <a class="button secondary" href="assets/Surya-K-Ratheesh-Resume.pdf" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg>
+              Resume
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Portfolio highlights">
+          <div class="signal-card hero-stat">
+            <span>Classification Accuracy</span>
+            <strong data-count="92">0%</strong>
+          </div>
+          <div class="signal-card hero-stat">
+            <span>Shipped Projects</span>
+            <strong data-count="6">0</strong>
+          </div>
+          <div class="signal-card hero-stat">
+            <span>Report Time Reduced</span>
+            <strong data-count="70">0%</strong>
+          </div>
+          <div class="orbit" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" aria-label="Professional snapshot">
+        <div>
+          <p class="section-kicker">Objective</p>
+          <h2>Building deployable intelligence, not just demos.</h2>
+        </div>
+        <p>
+          Experienced in computer vision, NLP, and full-stack development with a focus on reliable ML workflows,
+          interpretable interfaces, and products that users can actually operate.
+        </p>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Selected Work</p>
+            <h2>Projects with measurable outcomes</h2>
+          </div>
+          <div class="filter-tabs" aria-label="Project filters">
+            <button class="filter active" type="button" data-filter="all">All</button>
+            <button class="filter" type="button" data-filter="ml">ML</button>
+            <button class="filter" type="button" data-filter="web">Web</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-type="ml">
+            <div class="project-media medical">
+              <span>CT</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Python · Streamlit · Keras · Grad-CAM</p>
+              <h3>Kidney Tumor Detection Web App</h3>
+              <p>
+                ResNet50 ensemble for DICOM CT scans with CLAHE preprocessing, 92% accuracy across three tumor classes,
+                and Grad-CAM heatmaps for clinical interpretability.
+              </p>
+              <div class="project-result">
+                <span>May 2025 - May 2026</span>
+                <strong>70% faster reports</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-type="web">
+            <div class="project-media finance">
+              <span>FM</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Next.js 14 · TypeScript · React Query · Tailwind</p>
+              <h3>Finance Manager</h3>
+              <p>
+                Debt tracking and spreadsheet ingestion tool with React Query caching, WCAG AA contrast, dark mode, and
+                FormSubmit-powered contact automation.
+              </p>
+              <div class="project-result">
+                <span>May 2026 - June 2026</span>
+                <strong>60% fewer re-fetches</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-type="ml">
+            <div class="project-media guidance">
+              <span>AI</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Python · Streamlit · Pandas</p>
+              <h3>Career Guidance Chatbot</h3>
+              <p>
+                NLP-assisted counselling workflow that maps student profiles against 100+ career paths and reduces
+                repeat-query load for manual counselling.
+              </p>
+              <div class="project-result">
+                <span>Jan 2025 - Apr 2025</span>
+                <strong>100+ career paths</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-type="web">
+            <div class="project-media transport">
+              <span>H2W</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">TypeScript · Next.js · CSS</p>
+              <h3>Home-2 Work</h3>
+              <p>
+                Responsive coach hiring platform with multi-page flows, dark mode, dynamic components, and serverless
+                enquiry delivery through FormSubmit.
+              </p>
+              <div class="project-result">
+                <span>Feb 2026</span>
+                <strong>Serverless delivery</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Toolkit</p>
+            <h2>Where Surya is sharpest</h2>
+          </div>
+        </div>
+        <div class="skill-layout">
+          <div class="skill-map" aria-hidden="true">
+            <button class="node active" type="button" data-skill="vision">Computer Vision</button>
+            <button class="node" type="button" data-skill="nlp">NLP</button>
+            <button class="node" type="button" data-skill="frontend">Frontend</button>
+            <button class="node" type="button" data-skill="data">Data</button>
+          </div>
+          <div class="skill-detail">
+            <h3 id="skillTitle">Computer Vision</h3>
+            <p id="skillText">
+              Medical imaging, DICOM preprocessing, ResNet50 ensembles, CLAHE pipelines, and explainability through
+              Grad-CAM.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Keras</span><span>Streamlit</span><span>MySQL</span><span>HTML/CSS</span>
+              <span>C</span><span>VS Code</span><span>Cursor</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="experience">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Experience</p>
+            <h2>Education, leadership, and certifications</h2>
+          </div>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>2026</span>
+            <h3>Python Developer Intern</h3>
+            <p>
+              AICTE-certified internship where Surya shipped four Python desktop apps and automation scripts in two
+              months, earning commendation for code quality and delivery.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span>2022 - 2026</span>
+            <h3>B.Tech in Artificial Intelligence and Machine Learning</h3>
+            <p>
+              Mangalam College of Engineering, Kottayam. Principal League Awardee, 2022-23, with 8.41 CGPA.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span>2022 - 2025</span>
+            <h3>Under Officer, National Cadet Corps</h3>
+            <p>Leadership experience built through NCC responsibilities, teamwork, discipline, and communication.</p>
+          </article>
+          <article class="timeline-item">
+            <span>Certifications</span>
+            <h3>Innovation, Python, autonomous EVs, and Gen-AI</h3>
+            <p>
+              District Winner in Young Innovators Programme 7.0, Kaggle Python specialization, Techmaghi autonomous EV
+              workshop with IIT Kharagpur Kshitij, and IEEE Generative AI webinar.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Ready for AI/ML engineering roles.</h2>
+          <p>Available for full-time opportunities focused on deployable ML systems and intelligent web products.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:7suryakr@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            Email
+          </a>
+          <a class="button secondary" href="https://www.linkedin.com/in/surya-k-ratheesh" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11v7M8 8v.01M12 18v-7m0 0v2m0-2c1.2-1.7 4-1.4 4 1.5V18M4 4h16v16H4z"/></svg>
+            LinkedIn
+          </a>
+          <a class="button secondary" href="https://github.com/Surya-K-Ratheesh" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3 19c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.7-1.3-2.2-.2-4.5-1.1-4.5-4.9 0-1.1.4-2 1.1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.5 9.5 0 0 1 5 0c1.9-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7.7.7 1.1 1.6 1.1 2.7 0 3.8-2.3 4.7-4.5 4.9.4.3.8 1 .8 2v2.6c0 .3.2.6.8.5A10 10 0 0 0 12 2Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div class="search-modal" id="searchModal" aria-hidden="true">
+      <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search portfolio">
+        <input id="searchInput" type="search" placeholder="Search projects, skills, contact..." />
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
