@@ -1,27 +1,199 @@
-# Surya K Ratheesh Portfolio
+<div align="center">
 
-Interactive static portfolio built from the uploaded resume.
+# Surya K Ratheesh · Portfolio
 
-## Local preview
+**Building deployable intelligence, not just demos.**
 
-Open `index.html` directly in a browser, or run a tiny static server:
+[![Static Site](https://img.shields.io/badge/site-static-48d6a0?style=for-the-badge&logo=html5&logoColor=white)](index.html)
+[![Vanilla Stack](https://img.shields.io/badge/stack-HTML·CSS·JS-58a9ff?style=for-the-badge&logo=javascript&logoColor=white)](#tech-stack)
+[![Deploy](https://img.shields.io/badge/deploy-Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](#deploy-to-vercel)
+[![Zero Dependencies](https://img.shields.io/badge/deps-none-ffb84d?style=for-the-badge)](#tech-stack)
+
+*AI/ML Engineer · Data Science · Full-stack Developer*
+
+[Live Preview](#quick-start) · [Projects](#featured-work) · [Contact](#contact)
+
+</div>
+
+---
+
+## Overview
+
+An interactive, zero-dependency portfolio crafted from a professional resume — designed to feel fast, intentional, and alive. No frameworks, no build step, no bundle bloat. Just semantic HTML, expressive CSS, and vanilla JavaScript powering a cinematic single-page experience.
+
+> B.Tech graduate in Artificial Intelligence and Machine Learning, focused on production-ready ML systems, clinical AI interfaces, and sharp full-stack tools.
+
+<table>
+<tr>
+<td align="center"><strong>9+</strong><br/>Shipped Projects</td>
+<td align="center"><strong>92%</strong><br/>CV Model Accuracy</td>
+<td align="center"><strong>100+</strong><br/>Career Paths Mapped</td>
+<td align="center"><strong>8.41</strong><br/>CGPA · AIML</td>
+</tr>
+</table>
+
+---
+
+## Features
+
+| | Feature | Description |
+|:---:|:---|:---|
+| ✨ | **Particle field canvas** | Animated network background that reacts to pointer movement |
+| 🌗 | **Dark / light themes** | Persistent theme toggle with CSS custom properties |
+| 🔍 | **Command-style search** | `Ctrl`/`⌘` + `K` modal to jump to any section instantly |
+| 🏷️ | **Project filters** | Filter work by Data Science, ML, or Web |
+| 🃏 | **3D card tilt** | Pointer-driven perspective on project cards |
+| 🧭 | **Interactive skill map** | Clickable nodes for Computer Vision, NLP, Frontend, and Data |
+| 📊 | **Animated counters** | Scroll-triggered stat animations in the hero |
+| 📍 | **Scroll progress** | Top-edge progress bar tracks reading position |
+| ♿ | **Accessible by design** | Semantic landmarks, ARIA labels, keyboard navigation |
+
+---
+
+## Featured Work
+
+<details open>
+<summary><strong>Data Science</strong></summary>
+
+<br/>
+
+**Social Network Recommendation Engine** — Friend and page recommendations from social graph data using mutual-connection scoring, shared-interest overlap, and ranked candidate generation.
+
+**Instagram Profile Parser** — Parsed messy profile dumps into structured JSON; analyzed 107 Bangalore ecosystem accounts across 34 unique categories.
+
+</details>
+
+<details>
+<summary><strong>Machine Learning</strong></summary>
+
+<br/>
+
+**Kidney Tumor Detection Web App** — ResNet50 ensemble for DICOM CT scans with CLAHE preprocessing, 92% accuracy, and Grad-CAM heatmaps for clinical interpretability.
+
+**Career Guidance Chatbot** — NLP-assisted counselling workflow mapping student profiles against 100+ career paths.
+
+</details>
+
+<details>
+<summary><strong>Web</strong></summary>
+
+<br/>
+
+**Finance Manager** — Next.js 14 debt tracking tool with React Query caching, WCAG AA contrast, and dark mode.
+
+**Home-2 Work** — Responsive coach hiring platform with multi-page flows and serverless enquiry delivery.
+
+</details>
+
+---
+
+## Tech Stack
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  Presentation    HTML5 · CSS3 (custom properties)     │
+│  Interactivity   Vanilla JavaScript (ES6+)              │
+│  Typography      Inter (Google Fonts)                   │
+│  Graphics        Canvas 2D API · requestAnimationFrame  │
+│  Hosting         Vercel (static)                        │
+└─────────────────────────────────────────────────────────┘
+```
+
+**No npm. No bundler. No runtime dependencies.**
+
+---
+
+## Project Structure
+
+```
+Portfolio/
+├── index.html          # Single-page layout & content
+├── styles.css          # Design system, themes, animations
+├── script.js           # Interactions, canvas, search, filters
+├── vercel.json         # Vercel static config
+├── assets/
+│   ├── Portfolio_Pic.png
+│   └── 01_Surya-Resume_new1.pdf
+└── README.md
+```
+
+---
+
+## Quick Start
+
+### Option 1 — Open directly
+
+Double-click `index.html` or drag it into your browser.
+
+### Option 2 — Local server (recommended)
 
 ```powershell
 python -m http.server 4173
 ```
 
+Then open **http://localhost:4173**
+
+---
+
 ## Deploy to Vercel
 
-From this folder:
+From the project root:
 
 ```powershell
+# Preview deployment
 npx vercel
-```
 
-For production:
-
-```powershell
+# Production
 npx vercel --prod
 ```
 
-When Vercel asks for the output directory, use `.` because this is a static site.
+When prompted for the output directory, use `.` — this is a flat static site.
+
+`vercel.json` is already configured with `cleanUrls` and no trailing slashes.
+
+---
+
+## Site Map
+
+```mermaid
+flowchart LR
+    A[Hero] --> B[Objective]
+    B --> C[Work]
+    C --> D[Skills]
+    D --> E[Experience]
+    E --> F[Contact]
+
+    C --> G[Filters]
+    C --> H[Featured Cards]
+    D --> I[Skill Map]
+```
+
+| Section | ID | Highlights |
+|:---|:---:|:---|
+| Hero | `#home` | Portrait, stats, CTA buttons |
+| Work | `#work` | 6 projects with filter tabs |
+| Skills | `#skills` | Interactive 4-node skill map |
+| Experience | `#experience` | Education, internship, NCC, certs |
+| Contact | `#contact` | Email, LinkedIn, GitHub |
+
+---
+
+## Contact
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/email-7suryakr@gmail.com-48d6a0?style=flat-square&logo=gmail&logoColor=white)](mailto:7suryakr@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-surya--k--ratheesh-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/surya-k-ratheesh)
+[![GitHub](https://img.shields.io/badge/GitHub-Surya--K--Ratheesh-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Surya-K-Ratheesh)
+
+</div>
+
+---
+
+<div align="center">
+
+**Available for full-time AI/ML engineering roles.**
+
+*Crafted with intent · Deployed with confidence*
+
+</div>
