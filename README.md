@@ -5,13 +5,13 @@
 **Building deployable intelligence, not just demos.**
 
 [![Static Site](https://img.shields.io/badge/site-static-48d6a0?style=for-the-badge&logo=html5&logoColor=white)](index.html)
-[![Vanilla Stack](https://img.shields.io/badge/stack-HTML·CSS·JS-58a9ff?style=for-the-badge&logo=javascript&logoColor=white)](#tech-stack)
+[![Vanilla Stack](https://img.shields.io/badge/stack-HTML·CSS·JS-58a9ff?style=for-the-badge&logo=javascript&logoColor=white)](#built-with)
 [![Deploy](https://img.shields.io/badge/deploy-Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](#deploy-to-vercel)
-[![Zero Dependencies](https://img.shields.io/badge/deps-none-ffb84d?style=for-the-badge)](#tech-stack)
+[![Zero Dependencies](https://img.shields.io/badge/deps-none-ffb84d?style=for-the-badge)](#built-with)
 
 *AI/ML Engineer · Data Science · Full-stack Developer*
 
-[Live Preview](#quick-start) · [Projects](#featured-work) · [Contact](#contact)
+[Preview locally](#quick-start) · [Projects](#selected-projects) · [Contact](#contact)
 
 </div>
 
@@ -19,9 +19,9 @@
 
 ## Overview
 
-An interactive, zero-dependency portfolio crafted from a professional resume — designed to feel fast, intentional, and alive. No frameworks, no build step, no bundle bloat. Just semantic HTML, expressive CSS, and vanilla JavaScript powering a cinematic single-page experience.
+This repository contains my interactive portfolio site — a single-page experience highlighting my **AI/ML** background, **projects**, **skills**, and **experience**, with a modern UI and lightweight interactions.
 
-> B.Tech graduate in Artificial Intelligence and Machine Learning, focused on production-ready ML systems, clinical AI interfaces, and sharp full-stack tools.
+**About me**: B.Tech graduate in Artificial Intelligence and Machine Learning, focused on production-ready ML systems, clinical AI interfaces, and fast full-stack tools.
 
 <table>
 <tr>
@@ -34,7 +34,17 @@ An interactive, zero-dependency portfolio crafted from a professional resume —
 
 ---
 
-## Features
+## What’s inside the portfolio
+
+- **Hero**: snapshot + resume button
+- **Work**: projects with filters (Data Science / ML / Web)
+- **Skills**: interactive skill map (Computer Vision, NLP, Frontend, Data Science)
+- **Experience**: education, internship, leadership, certifications
+- **Contact**: email + LinkedIn + GitHub
+
+---
+
+## Portfolio features
 
 | | Feature | Description |
 |:---:|:---|:---|
@@ -50,16 +60,18 @@ An interactive, zero-dependency portfolio crafted from a professional resume —
 
 ---
 
-## Featured Work
+## Selected projects
 
 <details open>
 <summary><strong>Data Science</strong></summary>
 
 <br/>
 
-**Social Network Recommendation Engine** — Friend and page recommendations from social graph data using mutual-connection scoring, shared-interest overlap, and ranked candidate generation.
+**Social Network Recommendation Engine** — Friend and page recommendations from social graph data using mutual-connection scoring, shared-interest overlap, and ranked candidate generation.  
+Repo: `https://github.com/Surya-K-Ratheesh/Social_Recommendation_Engine`
 
-**Instagram Profile Parser** — Parsed messy profile dumps into structured JSON; analyzed 107 Bangalore ecosystem accounts across 34 unique categories.
+**Instagram Profile Parser** — Parsed messy profile dumps into structured JSON; analyzed 107 Bangalore ecosystem accounts across 34 unique categories.  
+Repo: `https://github.com/Surya-K-Ratheesh/Instagram_Profile_Parser`
 
 </details>
 
@@ -68,7 +80,7 @@ An interactive, zero-dependency portfolio crafted from a professional resume —
 
 <br/>
 
-**Kidney Tumor Detection Web App** — ResNet50 ensemble for DICOM CT scans with CLAHE preprocessing, 92% accuracy, and Grad-CAM heatmaps for clinical interpretability.
+**Kidney Tumor Detection Web App** — ResNet50 ensemble for DICOM CT scans with CLAHE preprocessing, **92% accuracy**, and Grad-CAM heatmaps for clinical interpretability.
 
 **Career Guidance Chatbot** — NLP-assisted counselling workflow mapping student profiles against 100+ career paths.
 
@@ -87,19 +99,12 @@ An interactive, zero-dependency portfolio crafted from a professional resume —
 
 ---
 
-## Tech Stack
+## Built with
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  Presentation    HTML5 · CSS3 (custom properties)     │
-│  Interactivity   Vanilla JavaScript (ES6+)              │
-│  Typography      Inter (Google Fonts)                   │
-│  Graphics        Canvas 2D API · requestAnimationFrame  │
-│  Hosting         Vercel (static)                        │
-└─────────────────────────────────────────────────────────┘
-```
-
-**No npm. No bundler. No runtime dependencies.**
+- **HTML/CSS/JavaScript** (no frameworks)
+- **Canvas 2D** for the animated particle field
+- **Inter** (Google Fonts)
+- **Vercel** for static hosting
 
 ---
 
@@ -153,31 +158,6 @@ When prompted for the output directory, use `.` — this is a flat static site.
 
 ---
 
-## Site Map
-
-```mermaid
-flowchart LR
-    A[Hero] --> B[Objective]
-    B --> C[Work]
-    C --> D[Skills]
-    D --> E[Experience]
-    E --> F[Contact]
-
-    C --> G[Filters]
-    C --> H[Featured Cards]
-    D --> I[Skill Map]
-```
-
-| Section | ID | Highlights |
-|:---|:---:|:---|
-| Hero | `#home` | Portrait, stats, CTA buttons |
-| Work | `#work` | 6 projects with filter tabs |
-| Skills | `#skills` | Interactive 4-node skill map |
-| Experience | `#experience` | Education, internship, NCC, certs |
-| Contact | `#contact` | Email, LinkedIn, GitHub |
-
----
-
 ## Contact
 
 <div align="center">
@@ -194,6 +174,6 @@ flowchart LR
 
 **Available for full-time AI/ML engineering roles.**
 
-*Crafted with intent · Deployed with confidence*
+*Surya K Ratheesh*
 
 </div>
