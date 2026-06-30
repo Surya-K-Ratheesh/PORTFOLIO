@@ -28,7 +28,7 @@ This repository contains my interactive portfolio site — a single-page experie
 <td align="center"><strong>9+</strong><br/>Shipped Projects</td>
 <td align="center"><strong>92%</strong><br/>CV Model Accuracy</td>
 <td align="center"><strong>100+</strong><br/>Career Paths Mapped</td>
-<td align="center"><strong>8.41</strong><br/>CGPA · AIML</td>
+<td align="center"><strong>7.96</strong><br/>CGPA · AIML</td>
 </tr>
 </table>
 
